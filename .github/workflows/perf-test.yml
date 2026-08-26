@@ -52,3 +52,12 @@ jobs:
       env:
         DATABASE_URL: postgresql://stellar-co-star-remit-mortage:stellar-co-star-remit-mortage_pass@localhost:5432/stellar-co-star-remit-mortage
       run: npx tsx scripts/db-perf.ts
+
+    - name: Run Contract Resource Benchmarks
+      run: ./scripts/benchmark-contracts.sh
+
+    - name: Upload Benchmark Results
+      uses: actions/upload-artifact@v4
+      with:
+        name: contract-benchmarks
+        path: scripts/benchmarks-current.json
