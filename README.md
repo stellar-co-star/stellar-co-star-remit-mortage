@@ -118,3 +118,12 @@ Refer to those guides to deploy contracts, fund wallets, and exercise the full b
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](./LICENSE) file
+
+## Resolved Issues
+
+The following issues have been addressed in this release:
+
+- Added issue templates for bug reports and feature requests
+- Added contributing guidelines and CODEOWNERS
+- Improved repository documentation and onboarding
+
